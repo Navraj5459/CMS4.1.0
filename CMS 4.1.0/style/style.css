@@ -1,0 +1,591 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(175, 174, 174);
+}
+
+.blue-line {
+  width: 100%;
+  height: 10px;
+  background-color: blue;
+}
+
+h1 {
+  color: white !important;
+}
+/*-------------css for nav-bar----------------------*/
+.navbar .bg-dark {
+  position: scroll;
+  top: 60px;
+}
+
+.bg-dark {
+  position: relative;
+}
+.bg-dark .navbar-brand {
+  color: white !important;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.navbar-collapse .nav-item {
+  /* padding-right: 5px; */
+  padding-left: 20px;
+  transition: 1s;
+}
+.bg-dark .nav-link {
+  color: white !important;
+  font-size: 18px;
+}
+
+.bg-dark .nav-link::after {
+  content: "";
+  border: 1px solid rgb(97, 96, 96);
+  margin-left: 10px;
+  position: absolute;
+  height: 80%;
+  top: 5px;
+}
+
+.logout-item {
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.fa-user {
+  color: green;
+}
+
+.fa-sign-out {
+  color: white;
+}
+
+.hover-both:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 991px) {
+  .bg-dark .nav-link::after {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item :hover {
+    border: 1px solid rgb(97, 96, 96);
+    padding: 3px;
+  }
+}
+/*-------------css for nav-bar----------------------*/
+
+/*-------------css for footer----------------------*/
+.footer-container {
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media a {
+  margin-bottom: 15px;
+  background: red;
+}
+
+.social-media a i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.basic-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.basic-container h1 {
+  color: white;
+  font-size: 35px;
+}
+
+.basic-container i {
+  color: blue;
+}
+/*-------------css for footer----------------------*/
+
+/*-------------------------Categories css-------------------------*/
+.card-header h1 {
+  color: white;
+  font-size: 25px;
+}
+
+.card-body label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body input {
+  border: none;
+  outline: none;
+  min-height: 35px;
+  border-radius: 10px;
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.card-body input::placeholder {
+  padding-left: 12px;
+  color: rgb(122, 118, 118);
+  font-weight: 550;
+}
+
+.submit-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.submit-button button {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 400;
+  user-select: none;
+  width: 178.3px;
+  height: 38px;
+}
+
+.display-error {
+  background-color: yellow;
+  text-align: center;
+  padding: 5px;
+  color: black;
+  font-size: 18px;
+}
+/*-------------------------Categories css-------------------------*/
+
+/*-------------------------All New post----------------------------------------------------*/
+.text-title {
+  width: 100%;
+  min-height: 150px;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.image-post input {
+  border: none;
+  outline: none;
+}
+
+.category-select {
+  border: none;
+  outline: none;
+  min-height: 30px;
+}
+/*-------------------------All New post----------------------------------------------------*/
+
+/*--------------------------------POST css--------------------------------*/
+.tr-color {
+  background: rgb(49, 49, 49) !important;
+  color: white;
+  font-size: 16px;
+}
+
+.title-over {
+  overflow: hidden;
+  width: 110px;
+}
+/*--------------------------------POST css--------------------------------*/
+
+/*-------------------------------  blog.php css  --------------------------------------*/
+.dateandtime a {
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(11, 11, 12);
+}
+
+.search-btn .btn-primary {
+  color: white;
+}
+
+.cms-header h1 {
+  color: black !important;
+  font-size: 29px !important;
+  font-weight: 500;
+}
+
+.cms-header h2 {
+  color: rgb(80, 78, 78) !important;
+  font-size: 22px !important;
+  font-weight: 500;
+}
+
+.cms-header img {
+  max-height: 450px;
+}
+
+.cms-header .comment {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  margin-bottom: 5px;
+}
+
+.cms-header .comment span {
+  display: inline-block;
+  background: rgb(61, 61, 61);
+  padding: 4px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.display-result {
+  color: white;
+  border: 1px solid rgb(59, 26, 250);
+  background: rgb(68, 122, 240);
+  width: 150px;
+  margin-bottom: 5px;
+  padding: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.blog-container {
+  padding: 10px;
+  min-height: 50px;
+}
+
+.blog-container .card-advertise {
+  border: none;
+}
+
+.blog-container .card img {
+  width: 100%;
+  height: 200px;
+}
+
+.blog-container .card-wrapper .card-header {
+  background-color: black;
+  height: 50px;
+}
+
+.blog-container .card .card-wrapper h1 {
+  font-size: 22px;
+  color: white;
+}
+
+.subscribe input {
+  width: 55%;
+  border: 1px solid rgb(163, 162, 162);
+  border-radius: 0;
+  height: 38px;
+}
+
+.subscribe button {
+  border-radius: 0;
+}
+
+.subscribe input::placeholder {
+  font-size: 18px;
+  text-align: center;
+  vertical-align: center;
+  padding: 0;
+}
+
+.subscribe {
+  display: flex;
+}
+
+.card-categories ul {
+  padding-left: 10px;
+  color: rgb(98, 98, 252);
+  list-style-type: square;
+  margin-bottom: 0;
+}
+
+.card-categories ul li a {
+  color: rgb(98, 98, 252);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.latest-news .card-header {
+  background-color: black;
+  height: 50px;
+}
+
+.blog-container .card .latest-news h1 {
+  font-size: 22px;
+  color: white;
+}
+
+.blog-container .latest-news .media-container {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.latest-news .media-container img {
+  width: 100px;
+  height: 100px;
+}
+/*-------------------------------  blog.php css  --------------------------------------*/
+
+/*-------------------------------- editpost.php  -------------------------------*/
+
+.category-edit {
+  color: white;
+  font-size: 19px;
+}
+
+.category-edit span {
+  color: rgb(39, 170, 39);
+  font-size: 18.5px;
+}
+
+.image-edit {
+  color: white;
+  font-size: 19px;
+}
+/*-------------------------------- editpost.php  -------------------------------*/
+
+/*----------------------------- comment section ---------------------------------*/
+.comment-section .comment-head {
+  border: 1px solid rgb(133, 133, 134);
+  background-color: rgb(163, 161, 161);
+  font-size: 18px;
+}
+
+.comment-section .comment-head h3 {
+  font-size: 22px;
+  color: rgb(41, 40, 40);
+}
+
+.comment-container .comment-input input {
+  border: none;
+  outline: none;
+  min-height: 20px;
+  border-radius: 5px;
+  color: rgb(27, 27, 27);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.comment-container .comment-input textarea {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: rgb(27, 27, 27);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.comment-container .comment-input textarea::placeholder {
+  padding-left: 12px;
+  color: rgb(122, 118, 118);
+  font-weight: 550;
+}
+
+.display-comment:nth-child(odd) {
+  background-color: rgb(238, 232, 232);
+}
+
+.display-comment:nth-child(even) {
+  background-color: rgb(204, 205, 206);
+}
+
+.display-comment .media img {
+  width: 60px;
+  height: 60px;
+  align-self: center;
+}
+/*----------------------------- comment section ---------------------------------*/
+
+/*------------------------------------  admin input field admin.login -------------------------------------*/
+
+.admin-input label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgb(207, 199, 186);
+}
+
+.admin-input input {
+  border-radius: 5px;
+}
+/*------------------------------------  admin input field admin.login -------------------------------------*/
+
+/*-------------------------------------------login css-------------------------------------------*/
+
+.login-container {
+  width: 500px;
+  margin: auto;
+}
+
+.login-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login-button button {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 400;
+  user-select: none;
+  width: 178.3px;
+  height: 38px;
+}
+/*-------------------------------------------login css-------------------------------------------*/
+
+/*----------------------------------manage comment section css----------------------------------*/
+.comment-container .fa {
+  color: green;
+  margin-right: 5px;
+}
+
+.comment-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.comment-container h1 {
+  color: white;
+  font-size: 35px;
+}
+/*----------------------------------manage comment section css----------------------------------*/
+
+.approved-comments h1 {
+  color: black !important;
+  color: white;
+  font-size: 25px;
+}
+
+/*----------------------------------dashboard section css----------------------------------*/
+.dashboard-container .card {
+  text-align: center;
+  color: white;
+  width: 85%;
+  /* height: 80px; */
+  margin-bottom: 15px;
+}
+
+.dashboard-container .card .card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  align-content: center;
+  padding: 1rem;
+}
+
+.dashboard-container .card .card-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-container .card .card-text {
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.dashboard-container .card .card-text i {
+  margin-right: 5px;
+  font-weight: normal !important;
+}
+
+.approved-cmt {
+  background: green;
+  padding: 5px;
+  width: 10px;
+  color: white;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.disapproved-cmt {
+  background: red;
+  padding: 5px;
+  width: 10px;
+  color: white;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top-post h1 {
+  color: black !important;
+  color: white;
+  font-size: 25px;
+}
+/*----------------------------------dashboard section css----------------------------------*/
+
+/*----------------------------------myprofile section css----------------------------------*/
+.profile-card .card-header {
+  background-color: black;
+  height: 50px;
+}
+
+.profile-admin .profile-card h1 {
+  font-size: 22px;
+  color: white;
+}
+
+.profile-card img {
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+}
+/*----------------------------------myprofile section css----------------------------------*/
